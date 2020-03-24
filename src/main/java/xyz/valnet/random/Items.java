@@ -9,16 +9,11 @@ import net.minecraft.item.ItemGroup;
 
 public class Items {
 	
-	public static final Item VALYRIAN_LOG = new BlockItem(
-			Blocks.VALYRIAN_LOG,
-			new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)
-	).setRegistryName("asd");
-	
 	
 	public static List<Item> getItems() {
 		List<Item> list = new ArrayList<Item>();
 		
-		list.add(VALYRIAN_LOG);
+		// list.add(VALYRIAN_LOG);
 		
 		return list;
 	}
