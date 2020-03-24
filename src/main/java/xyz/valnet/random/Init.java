@@ -16,7 +16,6 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.registries.IForgeRegistry;
 
 @Mod.EventBusSubscriber(bus = Bus.MOD, modid = ExampleMod.MOD_ID)
-//@ObjectHolder(ExampleMod.MOD_ID)
 public class Init {
 	
 	

@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "examplemod:block/valyrian_log_block" }
+    }
+}
