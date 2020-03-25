@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "side": "examplemod:block/valyrian_log",
-        "end": "examplemod:block/valyrian_log_top"
-    }
-}

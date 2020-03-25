@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "side": "qverse:block/valyrian_log",
+        "end": "qverse:block/valyrian_log_top"
+    }
+}

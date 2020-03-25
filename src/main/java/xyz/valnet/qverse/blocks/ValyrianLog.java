@@ -1,4 +1,4 @@
-package xyz.valnet.random.blocks;
+package xyz.valnet.qverse.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

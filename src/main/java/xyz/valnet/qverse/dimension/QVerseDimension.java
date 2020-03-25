@@ -1,4 +1,4 @@
-package xyz.valnet.random.dimension;
+package xyz.valnet.qverse.dimension;
 
 import net.minecraft.client.renderer.Vector3d;
 import net.minecraft.util.math.BlockPos;

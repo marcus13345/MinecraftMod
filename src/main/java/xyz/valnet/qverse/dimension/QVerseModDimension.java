@@ -1,4 +1,4 @@
-package xyz.valnet.random.dimension;
+package xyz.valnet.qverse.dimension;
 
 import java.util.function.BiFunction;
 
@@ -10,10 +10,10 @@ import net.minecraftforge.common.ModDimension;
 import net.minecraftforge.event.world.RegisterDimensionsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
-import xyz.valnet.random.Dimensions;
-import xyz.valnet.random.ExampleMod;
+import xyz.valnet.qverse.Dimensions;
+import xyz.valnet.qverse.QVerse;
 
-@EventBusSubscriber(modid = ExampleMod.MOD_ID, bus = EventBusSubscriber.Bus.FORGE)
+@EventBusSubscriber(modid = QVerse.MOD_ID, bus = EventBusSubscriber.Bus.FORGE)
 public class QVerseModDimension extends ModDimension {
 
 	@Override

@@ -1,10 +1,10 @@
-package xyz.valnet.random;
+package xyz.valnet.qverse;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import net.minecraft.block.Block;
-import xyz.valnet.random.blocks.ValyrianLog;
+import xyz.valnet.qverse.blocks.ValyrianLog;
 
 public class Blocks {
 	

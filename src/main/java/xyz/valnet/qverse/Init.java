@@ -1,4 +1,4 @@
-package xyz.valnet.random;
+package xyz.valnet.qverse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,9 +15,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.registries.IForgeRegistry;
-import xyz.valnet.random.dimension.QVerseModDimension;
+import xyz.valnet.qverse.dimension.QVerseModDimension;
 
-@Mod.EventBusSubscriber(bus = Bus.MOD, modid = ExampleMod.MOD_ID)
+@Mod.EventBusSubscriber(bus = Bus.MOD, modid = QVerse.MOD_ID)
 public class Init {
 	
 	

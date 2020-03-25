@@ -1,4 +1,4 @@
-package xyz.valnet.random;
+package xyz.valnet.qverse;
 
 import java.util.ArrayList;
 import java.util.List;
