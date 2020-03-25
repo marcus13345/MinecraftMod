@@ -9,11 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item.Properties;
 import net.minecraft.util.registry.Registry;
+import net.minecraftforge.common.ModDimension;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.registries.IForgeRegistry;
+import xyz.valnet.random.dimension.QVerseModDimension;
 
 @Mod.EventBusSubscriber(bus = Bus.MOD, modid = ExampleMod.MOD_ID)
 public class Init {
@@ -50,4 +52,12 @@ public class Init {
 			registry.register(blockItem);
 		}
 	}
+
+	@SubscribeEvent
+	public static void onDimensionRegistryEvent(RegistryEvent.Register<ModDimension> event) {
+		IForgeRegistry<ModDimension> registry = event.getRegistry();
+		registry.register(Dimensions.QVERSE_MOD_DIMENSION);
+	}
+
+	
 }
