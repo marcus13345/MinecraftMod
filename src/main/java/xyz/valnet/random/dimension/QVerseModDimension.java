@@ -24,7 +24,6 @@ public class QVerseModDimension extends ModDimension {
 	@SubscribeEvent
 	public static void onRegisterDimensionsEvent(RegisterDimensionsEvent event) {
 		
-		
 		if (DimensionType.byName(Dimensions.QVERSE_MOD_DIMENSION_LOCATION) == null) {
 			DimensionManager.registerDimension(Dimensions.QVERSE_MOD_DIMENSION_LOCATION, Dimensions.QVERSE_MOD_DIMENSION, null, true);
 		}
