@@ -33,8 +33,9 @@ public class Init {
 		List<Block> blockList = Blocks.getBlocks();
 		Block[] blocks = new Block[blockList.size()];
 		blockList.toArray(blocks);
-
-		event.getRegistry().register(Blocks.VALYRIAN_LOG);
+		for (Block bee : blocks) {
+			event.getRegistry().register(bee);
+		}
 	}
 	
 	@SubscribeEvent
