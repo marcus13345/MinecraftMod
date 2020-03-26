@@ -6,7 +6,7 @@ import java.util.List;
 import net.minecraft.block.Block;
 import xyz.valnet.random.blocks.ValyrianLog;
 
-public class Blocks {
+public class Blocks {	
 	
 	public static final Block VALYRIAN_LOG = new ValyrianLog();	
 
