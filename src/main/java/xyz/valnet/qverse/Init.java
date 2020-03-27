@@ -1,21 +1,18 @@
 package xyz.valnet.qverse;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item.Properties;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.ModDimension;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.registries.IForgeRegistry;
-import xyz.valnet.qverse.dimension.QVerseModDimension;
 
 @Mod.EventBusSubscriber(bus = Bus.MOD, modid = QVerse.MOD_ID)
 public class Init {
@@ -50,6 +47,15 @@ public class Init {
 			).setRegistryName(block.getRegistryName() + "_item");
 
 			registry.register(blockItem);
+		}
+	}
+
+	@SubscribeEvent
+	public static void registerBiomes(final RegistryEvent.Register<Biome> event) {
+		IForgeRegistry<Biome> registry = event.getRegistry();
+
+		for(Biome biome : Biomes.getBiomes()) {
+			registry.register(biome);
 		}
 	}
 
