@@ -17,7 +17,6 @@ import net.minecraftforge.registries.IForgeRegistry;
 @Mod.EventBusSubscriber(bus = Bus.MOD, modid = QVerse.MOD_ID)
 public class Init {
 	
-	
 	@SubscribeEvent
 	public static void registerItems(final RegistryEvent.Register<Item> event) {
 		// List<Item> itemList = Items.getItems();
@@ -62,7 +61,10 @@ public class Init {
 	@SubscribeEvent
 	public static void onDimensionRegistryEvent(RegistryEvent.Register<ModDimension> event) {
 		IForgeRegistry<ModDimension> registry = event.getRegistry();
-		registry.register(Dimensions.QVERSE_MOD_DIMENSION);
+
+		for(ModDimension dim : Dimensions.getDimensions()) {
+			registry.register(dim);
+		}
 	}
 
 	

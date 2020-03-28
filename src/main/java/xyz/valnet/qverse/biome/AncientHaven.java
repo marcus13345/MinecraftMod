@@ -1,18 +1,14 @@
 package xyz.valnet.qverse.biome;
 
 import net.minecraft.block.Blocks;
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.EntityType;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.structure.VillageConfig;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 
-public class QVersePlane extends Biome {
+public class AncientHaven extends Biome {
 
-	public QVersePlane() {
+	public AncientHaven() {
 		super(new Builder()
 			.surfaceBuilder(new ConfiguredSurfaceBuilder<SurfaceBuilderConfig>(
 				SurfaceBuilder.DEFAULT,
@@ -33,11 +29,7 @@ public class QVersePlane extends Biome {
 			.parent(null)
 		);
 
-
-		
-		this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(EntityType.BOAT, 4, 1, 1));
-		this.addStructure(Feature.VILLAGE.withConfiguration(new VillageConfig("village/desert/town_centers", 6)));
-		this.setRegistryName("qverse:qverse_plane");
+		this.setRegistryName("qverse:haven");
 	}
 
 }

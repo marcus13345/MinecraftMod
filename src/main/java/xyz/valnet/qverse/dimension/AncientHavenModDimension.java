@@ -7,11 +7,11 @@ import net.minecraft.world.dimension.Dimension;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraftforge.common.ModDimension;
 
-public class QVerseModDimension extends ModDimension {
+public class AncientHavenModDimension extends ModDimension {
 
 	@Override
 	public BiFunction<World, DimensionType, ? extends Dimension> getFactory() {
-		return QVerseDimension::new;
+		return AncientHavenDimension::new;
 	}
 
 }
