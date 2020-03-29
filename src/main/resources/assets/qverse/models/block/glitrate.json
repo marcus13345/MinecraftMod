@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "side": "qverse:block/glitrate",
+        "bottom": "qverse:block/glitrate",
+        "top": "qverse:block/glitrate"
+    }
+}

@@ -46,7 +46,7 @@ public class AncientHavenDimension extends Dimension {
 
 	@Override
 	public Vec3d getFogColor(float celestialAngle, float partialTicks) {
-		return new Vec3d(1D, 1D, 1D);
+		return new Vec3d(0D, 0D, 0D);
 	}
 
 	@Override

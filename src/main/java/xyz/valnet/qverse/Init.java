@@ -29,10 +29,10 @@ public class Init {
 	@SubscribeEvent
 	public static void registerBlocks(final RegistryEvent.Register<Block> event) {
 		List<Block> blockList = Blocks.getBlocks();
-		Block[] blocks = new Block[blockList.size()];
-		blockList.toArray(blocks);
 
-		event.getRegistry().register(Blocks.VALYRIAN_LOG);
+		for(Block block : blockList) {
+			event.getRegistry().register(block);
+		}
 	}
 	
 	@SubscribeEvent

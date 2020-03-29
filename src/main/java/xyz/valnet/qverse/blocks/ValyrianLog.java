@@ -7,7 +7,7 @@ public class ValyrianLog extends Block {
 
 	public ValyrianLog() {
 		super(Properties.create(Material.WOOD));
-		this.setRegistryName("valyrian_log_block");
+		this.setRegistryName("valyrian_log");
 	}
 
 }
